@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+# Sensor Event Gantt Chart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação para visualização de eventos de sensores em um gráfico de Gantt. Permite acompanhar informações como **ataques**, **concentração de fumaça**, **temperatura** e **umidade**, além de gerar dados mockados para testes. Sendo totalmente editável.
 
-Currently, two official plugins are available:
+## 📋 Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto exibe eventos coletados de diferentes tipos de sensores em uma interface gráfica de fácil entendimento. Os eventos são renderizados em um gráfico de Gantt com marcações temporais, permitindo rápida visualização e análise dos dados de coleta.
 
-## Expanding the ESLint configuration
+Funcionalidades principais:
+- Exibição de eventos por tipo (ex: ataques, fumaça, temperatura, umidade).
+- Barra de tempo (Time Header) com marcações a cada 30 minutos, incluindo o horário **24:00**.
+- Botões para navegação rápida até o primeiro e o último evento de cada tipo.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Como rodar o projeto
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Acesse o diretório do projeto**
+   ```bash
+   cd seu-repositorio
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+3. **Instale as dependências**
+   ```bash
+   yarn install
+
+
+4. **Inicie o projeto**
+   ```bash
+   yarn start
+
