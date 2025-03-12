@@ -21,13 +21,10 @@ Funcionalidades principais:
    ```bash
    cd seu-repositorio
 
-
 3. **Instale as dependências**
    ```bash
    yarn install
 
-
 4. **Inicie o projeto**
    ```bash
    yarn start
-
